@@ -1,1 +1,177 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><title type="text">Shao</title><subtitle type="html">MemE is a powerful and highly customizable GoHugo theme for personal blogs.</subtitle><updated>2021-08-13T01:48:55+00:00</updated><id>https://shaoxiaochang.github.io/</id><link rel="alternate" type="text/html" href="https://shaoxiaochang.github.io/"/><link rel="self" type="application/atom+xml" href="https://shaoxiaochang.github.io/atom.xml"/><author><name>shao</name><uri>https://shaoxiaochang.github.io/</uri><email>ddinox123@gmail.com</email></author><rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights><generator uri="https://gohugo.io/" version="0.87.0">Hugo</generator><entry><title type="text">Hello World</title><link rel="alternate" type="text/html" href="https://shaoxiaochang.github.io/posts/hello-world/"/><id>https://shaoxiaochang.github.io/posts/hello-world/</id><updated>2021-08-13T01:48:53+00:00</updated><published>2021-08-12T14:17:30+08:00</published><author><name>shao</name><uri>https://shaoxiaochang.github.io/</uri><email>ddinox123@gmail.com</email></author><rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights><summary type="html">Hello World</summary><content type="html">&lt;h1 id="hello-world">Hello World&lt;/h1></content></entry></feed>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><title type="text">Shao</title><subtitle type="html">MemE is a powerful and highly customizable GoHugo theme for personal blogs.</subtitle><updated>2021-08-13T01:50:22+00:00</updated><id>https://shaoxiaochang.github.io/</id><link rel="alternate" type="text/html" href="https://shaoxiaochang.github.io/"/><link rel="self" type="application/atom+xml" href="https://shaoxiaochang.github.io/atom.xml"/><author><name>shao</name><uri>https://shaoxiaochang.github.io/</uri><email>ddinox123@gmail.com</email></author><rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights><generator uri="https://gohugo.io/" version="0.87.0">Hugo</generator><entry><title type="text">.Net Core csv</title><link rel="alternate" type="text/html" href="https://shaoxiaochang.github.io/posts/dotnet-core-csv/"/><id>https://shaoxiaochang.github.io/posts/dotnet-core-csv/</id><updated>2021-08-13T01:50:20+00:00</updated><published>2021-08-13T09:17:34+08:00</published><author><name>shao</name><uri>https://shaoxiaochang.github.io/</uri><email>ddinox123@gmail.com</email></author><rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights><summary type="html">.Net Core 產生csv檔 自訂IActionResult Utf8ForExcelCsvResult 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 public class Utf8ForExcelCsvResult : IActionResult { public string Content { get; set; } public string ContentType { get; set; } public string FileName { get; set; } public Task ExecuteResultAsync(ActionContext context) { var Response = context.</summary><content type="html">&lt;h2 id="net-core-產生csv檔">.Net Core 產生csv檔&lt;/h2>
+&lt;ol>
+&lt;li>自訂IActionResult Utf8ForExcelCsvResult&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-csharp" data-lang="csharp">&lt;span class="k">public&lt;/span> &lt;span class="k">class&lt;/span> &lt;span class="nc">Utf8ForExcelCsvResult&lt;/span> &lt;span class="p">:&lt;/span> &lt;span class="n">IActionResult&lt;/span>
+&lt;span class="p">{&lt;/span>
+&lt;span class="k">public&lt;/span> &lt;span class="kt">string&lt;/span> &lt;span class="n">Content&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="k">get&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="k">set&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="p">}&lt;/span>
+&lt;span class="k">public&lt;/span> &lt;span class="kt">string&lt;/span> &lt;span class="n">ContentType&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="k">get&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="k">set&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="p">}&lt;/span>
+&lt;span class="k">public&lt;/span> &lt;span class="kt">string&lt;/span> &lt;span class="n">FileName&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="k">get&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="k">set&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="p">}&lt;/span>
+&lt;span class="k">public&lt;/span> &lt;span class="n">Task&lt;/span> &lt;span class="n">ExecuteResultAsync&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">ActionContext&lt;/span> &lt;span class="n">context&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;span class="p">{&lt;/span>
+&lt;span class="kt">var&lt;/span> &lt;span class="n">Response&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">context&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">HttpContext&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">Response&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;span class="n">Response&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">Headers&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="s">&amp;#34;Content-Type&amp;#34;&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="k">this&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">ContentType&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;span class="n">Response&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">Headers&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="s">&amp;#34;Content-Disposition&amp;#34;&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s">$&amp;#34;attachment; filename={this.FileName}; filename*=UTF-8&amp;#39;&amp;#39;{this.FileName}&amp;#34;&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;span class="k">using&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="kt">var&lt;/span> &lt;span class="n">sw&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="k">new&lt;/span> &lt;span class="n">StreamWriter&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">Response&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">Body&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">Encoding&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">UTF8&lt;/span>&lt;span class="p">))&lt;/span>
+&lt;span class="p">{&lt;/span>
+&lt;span class="n">sw&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">Write&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">Content&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;span class="p">}&lt;/span>
+&lt;span class="k">return&lt;/span> &lt;span class="n">Task&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">CompletedTask&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;span class="p">}&lt;/span>
+&lt;span class="p">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p> &lt;/p>
+&lt;ol start="2">
+&lt;li>產生csv檔的Contorller&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-csharp" data-lang="csharp">&lt;span class="k">public&lt;/span> &lt;span class="n">IActionResult&lt;/span> &lt;span class="n">GetCSV&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;span class="p">{&lt;/span>
+&lt;span class="kt">var&lt;/span> &lt;span class="n">weatherForecasts&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">Get&lt;/span>&lt;span class="p">();&lt;/span>
+&lt;span class="kt">var&lt;/span> &lt;span class="n">builder&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="k">new&lt;/span> &lt;span class="n">StringBuilder&lt;/span>&lt;span class="p">();&lt;/span>
+&lt;span class="n">builder&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">AppendLine&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s">&amp;#34;日期,攝氏,華氏,summary&amp;#34;&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;span class="k">foreach&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="kt">var&lt;/span> &lt;span class="n">item&lt;/span> &lt;span class="k">in&lt;/span> &lt;span class="n">weatherForecasts&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;span class="p">{&lt;/span>
+&lt;span class="n">builder&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">AppendLine&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s">$&amp;#34;{item.Date},{item.TemperatureC},{item.TemperatureF},{item.Summary}&amp;#34;&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;span class="p">}&lt;/span>
+&lt;span class="k">return&lt;/span> &lt;span class="k">new&lt;/span> &lt;span class="n">Utf8ForExcelCsvResult&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;span class="p">{&lt;/span>
+&lt;span class="n">Content&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">builder&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">ToString&lt;/span>&lt;span class="p">(),&lt;/span>
+&lt;span class="n">ContentType&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s">&amp;#34;text/csv;&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="n">FileName&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s">&amp;#34;WeatherForecast.csv&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="p">};&lt;/span>
+&lt;span class="p">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p> &lt;/p>
+&lt;p>問題: 從 ASP.NET Core 3.0 開始，預設會停用同步伺服器作業。
+ &lt;/p>
+&lt;p>&lt;a href="https://docs.microsoft.com/zh-tw/dotnet/core/compatibility/aspnetcore#http-synchronous-io-disabled-in-all-servers">https://docs.microsoft.com/zh-tw/dotnet/core/compatibility/aspnetcore#http-synchronous-io-disabled-in-all-servers&lt;/a>&lt;/p>
+&lt;pre>&lt;code>System.InvalidOperationException
+HResult=0x80131509
+Message=Synchronous operations are disallowed. Call WriteAsync or set AllowSynchronousIO to true instead.
+Source=Microsoft.AspNetCore.Server.IIS
+StackTrace:
+at Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+at Microsoft.AspNetCore.Server.IIS.Core.WrappingStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+at System.IO.Stream.Write(ReadOnlySpan`1 buffer)
+at System.IO.StreamWriter.Flush(Boolean flushStream, Boolean flushEncoder)
+at System.IO.StreamWriter.Dispose(Boolean disposing)
+at System.IO.TextWriter.Dispose()
+at DemoExcel.Controllers.Utf8ForExcelCsvResult.ExecuteResultAsync(ActionContext context) in D:\vs2019\Lab\DemoExcel\Controllers\WeatherForecastController.cs:line 85
+at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultAsync(IActionResult result)
+at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State&amp;amp; next, Scope&amp;amp; scope, Object&amp;amp; state, Boolean&amp;amp; isCompleted)
+at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+&lt;/code>&lt;/pre>&lt;p>解法1: 在starup增加&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-csharp" data-lang="csharp">&lt;span class="k">public&lt;/span> &lt;span class="k">void&lt;/span> &lt;span class="n">ConfigureServices&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">IServiceCollection&lt;/span> &lt;span class="n">services&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;span class="p">{&lt;/span>
+&lt;span class="c1">// If using Kestrel:
+&lt;/span>&lt;span class="c1">&lt;/span> &lt;span class="n">services&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">Configure&lt;/span>&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="n">KestrelServerOptions&lt;/span>&lt;span class="p">&amp;gt;(&lt;/span>&lt;span class="n">options&lt;/span> &lt;span class="p">=&amp;gt;&lt;/span>
+&lt;span class="p">{&lt;/span>
+&lt;span class="n">options&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">AllowSynchronousIO&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="k">true&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;span class="p">});&lt;/span>
+&lt;span class="c1">// If using IIS:
+&lt;/span>&lt;span class="c1">&lt;/span> &lt;span class="n">services&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">Configure&lt;/span>&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="n">IISServerOptions&lt;/span>&lt;span class="p">&amp;gt;(&lt;/span>&lt;span class="n">options&lt;/span> &lt;span class="p">=&amp;gt;&lt;/span>
+&lt;span class="p">{&lt;/span>
+&lt;span class="n">options&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">AllowSynchronousIO&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="k">true&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;span class="p">});&lt;/span>
+&lt;span class="p">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>解法2: 修改Utf8ForExcelCsvResult的ExecuteResultAsync方法為非同步&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-csharp" data-lang="csharp">&lt;span class="k">public&lt;/span> &lt;span class="k">async&lt;/span> &lt;span class="n">Task&lt;/span> &lt;span class="n">ExecuteResultAsync&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">ActionContext&lt;/span> &lt;span class="n">context&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;span class="p">{&lt;/span>
+&lt;span class="kt">var&lt;/span> &lt;span class="n">Response&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">context&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">HttpContext&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">Response&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;span class="n">Response&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">Headers&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="s">&amp;#34;Content-Type&amp;#34;&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="k">this&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">ContentType&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;span class="n">Response&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">Headers&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="s">&amp;#34;Content-Disposition&amp;#34;&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s">$&amp;#34;attachment; filename={this.FileName}; filename*=UTF-8&amp;#39;&amp;#39;{this.FileName}&amp;#34;&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;span class="c1">// 讓編碼格式變成utf-8 whit BOM
+&lt;/span>&lt;span class="c1">&lt;/span> &lt;span class="k">await&lt;/span> &lt;span class="n">context&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">HttpContext&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">Response&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">WriteAsync&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s">&amp;#34;\uFEFF&amp;#34;&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;span class="k">await&lt;/span> &lt;span class="n">context&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">HttpContext&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">Response&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">WriteAsync&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">Content&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">Encoding&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">UTF8&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;span class="p">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p> &lt;/p>
+&lt;p>參考:
+ &lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://stackoverflow.com/questions/52491983/excel-csv-encoding-issues">https://stackoverflow.com/questions/52491983/excel-csv-encoding-issues&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://stackoverflow.com/questions/59388629/what-is-the-usage-of-executeresultasyncactioncontext-method">https://stackoverflow.com/questions/59388629/what-is-the-usage-of-executeresultasyncactioncontext-method&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.red-gate.com/simple-talk/development/dotnet-development/action-control-asp-net-core/">https://www.red-gate.com/simple-talk/development/dotnet-development/action-control-asp-net-core/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://stackoverflow.com/questions/47735133/asp-net-core-synchronous-operations-are-disallowed-call-writeasync-or-set-all">https://stackoverflow.com/questions/47735133/asp-net-core-synchronous-operations-are-disallowed-call-writeasync-or-set-all&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://stackoverflow.com/questions/1005530/how-to-add-encoding-information-to-the-response-stream-in-asp-net">https://stackoverflow.com/questions/1005530/how-to-add-encoding-information-to-the-response-stream-in-asp-net&lt;/a>&lt;/li>
+&lt;/ul></content></entry><entry><title type="text">Hello World</title><link rel="alternate" type="text/html" href="https://shaoxiaochang.github.io/posts/hello-world/"/><id>https://shaoxiaochang.github.io/posts/hello-world/</id><updated>2021-08-13T01:50:20+00:00</updated><published>2021-08-12T14:17:30+08:00</published><author><name>shao</name><uri>https://shaoxiaochang.github.io/</uri><email>ddinox123@gmail.com</email></author><rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights><summary type="html">Hello World</summary><content type="html">&lt;h1 id="hello-world">Hello World&lt;/h1></content></entry></feed>
